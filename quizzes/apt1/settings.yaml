@@ -1,0 +1,11 @@
+attempt_limit: 3
+shuffle_choices: true
+availability:
+  start: 2024-01-01T00:00:00Z
+  end: 2025-01-01T00:00:00Z
+metadata:
+  difficulty: intermediate
+  tags:
+    - threat-intelligence
+    - apt1
+    - intrusion-detection

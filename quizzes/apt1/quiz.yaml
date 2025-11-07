@@ -1,0 +1,180 @@
+id: apt1-analysis
+module: apt1
+version: v1.0.0
+title: "APT1 — Advanced Persistent Threat Analysis"
+description: "Assess understanding of the APT1 threat group, its origins, tactics, and defensive detection strategies."
+shuffle_questions: false
+questions:
+  - id: q1
+    type: multiple_choice
+    prompt: "What does \"APT\" stand for in cybersecurity?"
+    choices:
+      - key: a
+        text: "Automated Packet Transmission"
+        correct: false
+      - key: b
+        text: "Advanced Persistent Threat"
+        correct: true
+      - key: c
+        text: "Application Port Tracker"
+        correct: false
+      - key: d
+        text: "Anonymous Proxy Tunnel"
+        correct: false
+    score: 1
+  - id: q2
+    type: multiple_choice
+    prompt: "What country is APT1 primarily associated with?"
+    choices:
+      - key: a
+        text: "Russia"
+        correct: false
+      - key: b
+        text: "North Korea"
+        correct: false
+      - key: c
+        text: "China"
+        correct: true
+      - key: d
+        text: "Iran"
+        correct: false
+    score: 1
+  - id: q3
+    type: multiple_choice
+    prompt: "Which organization first publicly exposed APT1 in a detailed report (2013)?"
+    choices:
+      - key: a
+        text: "FireEye"
+        correct: false
+      - key: b
+        text: "Mandiant"
+        correct: true
+      - key: c
+        text: "CrowdStrike"
+        correct: false
+      - key: d
+        text: "NSA"
+        correct: false
+    score: 1
+  - id: q4
+    type: multiple_choice
+    prompt: "What is the primary mission attributed to APT1 according to the Mandiant report?"
+    choices:
+      - key: a
+        text: "Ransomware attacks for profit"
+        correct: false
+      - key: b
+        text: "Long-term cyber espionage to steal intellectual property"
+        correct: true
+      - key: c
+        text: "Financial fraud targeting banks"
+        correct: false
+      - key: d
+        text: "Political disinformation campaigns"
+        correct: false
+    score: 1
+  - id: q5
+    type: multiple_choice
+    prompt: "Which Chinese military unit is linked to APT1?"
+    choices:
+      - key: a
+        text: "Unit 8200"
+        correct: false
+      - key: b
+        text: "Unit 61398"
+        correct: true
+      - key: c
+        text: "Unit 74455"
+        correct: false
+      - key: d
+        text: "Unit 101"
+        correct: false
+    score: 1
+  - id: q6
+    type: multiple_choice
+    prompt: "What types of targets did APT1 most often attack?"
+    choices:
+      - key: a
+        text: "Gaming servers"
+        correct: false
+      - key: b
+        text: "U.S. and international corporations in key industries (e.g., aerospace, energy, telecom)"
+        correct: true
+      - key: c
+        text: "Personal home networks"
+        correct: false
+      - key: d
+        text: "Academic networks only"
+        correct: false
+    score: 1
+  - id: q7
+    type: multiple_choice
+    prompt: "Which of the following techniques did APT1 commonly use to maintain persistence?"
+    choices:
+      - key: a
+        text: "Hardware implants"
+        correct: false
+      - key: b
+        text: "Webshells and remote administration tools (RATs)"
+        correct: true
+      - key: c
+        text: "Drive-by cryptocurrency miners"
+        correct: false
+      - key: d
+        text: "BIOS-level rootkits"
+        correct: false
+    score: 1
+  - id: q8
+    type: multiple_choice
+    prompt: "What network indicators were frequently seen in APT1’s activity?"
+    choices:
+      - key: a
+        text: "DNS tunneling, HTTP beaconing to known command-and-control servers"
+        correct: true
+      - key: b
+        text: "NTP synchronization errors"
+        correct: false
+      - key: c
+        text: "Excessive ARP broadcasts"
+        correct: false
+      - key: d
+        text: "IPv6 routing anomalies"
+        correct: false
+    score: 1
+  - id: q9
+    type: multiple_choice
+    prompt: "Why was the APT1 report significant for the cybersecurity community?"
+    choices:
+      - key: a
+        text: "It was the first confirmed state-sponsored ransomware case"
+        correct: false
+      - key: b
+        text: "It publicly attributed a Chinese military unit to long-term cyber espionage"
+        correct: true
+      - key: c
+        text: "It introduced new cryptographic algorithms"
+        correct: false
+      - key: d
+        text: "It proved zero-trust was ineffective"
+        correct: false
+    score: 1
+  - id: q10
+    type: multiple_choice
+    prompt: "Which defensive actions can organizations take to detect APT1-like threats?"
+    choices:
+      - key: a
+        text: "Monitor outbound traffic patterns and DNS requests for known C2 domains"
+        correct: true
+      - key: b
+        text: "Disable all antivirus software"
+        correct: false
+      - key: c
+        text: "Avoid software updates"
+        correct: false
+      - key: d
+        text: "Only inspect inbound email traffic"
+        correct: false
+    score: 1
+scoring:
+  total: 10
+  pass_percentage: 70
